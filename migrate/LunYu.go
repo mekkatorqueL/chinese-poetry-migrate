@@ -50,7 +50,7 @@ func migrateLunYu(path string) error {
 	bar := pb.StartNew(len(lunYu))
 	for _, s := range lunYu {
 
-		db.Conn.Create(&tableStruct.SiShuWuJing{
+		db.Conn.Create(&tableStruct.LunYu{
 			Chapter: s.Chapter,
 			Paragraphs: strings.Join(s.Paragraphs, "||"),
 		})
