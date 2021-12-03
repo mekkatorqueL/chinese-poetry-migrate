@@ -20,10 +20,10 @@ func main() {
 	//if err != nil {
 	//	panic(err)
 	//}
-	//err = migrate.LunYu("./chinese-poetry/lunyu")
-	//if err != nil {
-	//	panic(err)
-	//}
+	err = migrate.LunYu("./chinese-poetry/lunyu")
+	if err != nil {
+		panic(err)
+	}
 	//err = migrate.SiShuWuJing("./chinese-poetry/sishuwujing")
 	//if err != nil {
 	//	panic(err)
@@ -32,9 +32,9 @@ func main() {
 	//if err != nil {
 	//	panic(err)
 	//}
-	err := migrate.SongCi("./chinese-poetry/ci")
-	if err != nil {
-		panic(err)
-	}
+	//err := migrate.SongCi("./chinese-poetry/ci")
+	//if err != nil {
+	//	panic(err)
+	//}
 
 }
